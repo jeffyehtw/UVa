@@ -1,2 +1,2 @@
 # UVa
-Solutions of http:://uva.onlinejudge.org/index.php
+Solutions of http://uva.onlinejudge.org/index.php
