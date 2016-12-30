@@ -3,31 +3,15 @@
 #include <vector>
 #include <sstream>
 #include <stack>
-#include <fstream>
 
 using namespace std;
 
-int get_priority(char c) {
-	if (c == '(')
-		return 3;
-	else if (c == ')')
-		return 0;
-	else if (c == '*' || c == '/')
-		return 2;
-	else
-		return 1;
-}
-
 int main() {
-	//ifstream cin;
-	//cin.open("input.txt", ios::in);
-
 	// var
 	int n;
-	//cin >> n;
-	cin >> n;
 
-	//cin.get();
+	// input
+	cin >> n;
 	cin.get();
 	cin.get();
 
@@ -38,10 +22,7 @@ int main() {
 		vector<char> in;
 		vector<char> out;
 
-		//cin.get();
-
 		char c;
-		//while (cin.get(c)) {
 		while (cin.get(c)) {
 			if (c == '\n')
 				break;
@@ -49,14 +30,6 @@ int main() {
 			
 			in.push_back(c);
 		}
-
-		/*
-		getline(cin, buffer);
-		istringstream ss(buffer);
-		while (getline(ss, buffer, ' ')) {
-			in.push_back(buffer[0]);
-		}
-		*/
 
 		for (int i = 0; i < in.size(); i++) {
 			if (isdigit(in[i])) {
